@@ -1,9 +1,57 @@
 body{
-	background:url('images/Music.jpg');
+	background:url('images/Music.JPG');
 	background-size: cover;
 	position:fixed;
 }
+h6
+{
+	margin-top:0px;
+	font-size:30px;
+	color:#5b5b5e;
+	font-family: 'Fascinate Inline', cursive;
 
+}
+.Heading{
+	margin-top:150px;
+	color:#ff3333;
+	font-family: 'Fascinate Inline', cursive;
+	margin-left:150px;
+	font-size: 140px;
+	letter-spacing: 2px;
+	text-shadow: 5px 5px 5px white;
+	animation:emerge 4s linear;
+}
+@keyframes emerge
+{
+	0%{
+		opacity: 0;
+	}
+	25%
+	{
+		opacity:0.3;
+	}
+	50%
+	{
+
+		opacity:0.6;
+		transform: scaleY(2);
+		text-shadow: 5px 5px 10px white;
+	}
+	75%
+	{
+		opacity: 0.9;
+		transform: scaleY(1.5);
+		text-shadow: 5px 5px 5px white;
+
+	}
+	100%
+	{
+		opacity: 1;
+		transform: scaleY(1);
+		text-shadow: 5px 5px 3px white;
+
+	}
+}
 .keyboard{
 	background:transparent;
 	height:330px;
@@ -19,10 +67,10 @@ table{
 	background:transparent;
 	height:62px;
 	width:62px;
-	color:#5b5b5e;
+	color:silver;
 	text-align: center;
 	border-style:solid;
-	border-color:#5b5b5e;
+	border-color:silver;
 	border-radius: 20%;
 	letter-spacing: 0.1rem;
 	transition: all 0.3s ease-in;
